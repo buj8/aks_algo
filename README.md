@@ -1,6 +1,10 @@
-# aks_algo
+# AKS ALGORITHM
 
-Just a basic implementation of the AKS primality test algorithm in Rust.
+_Just a basic implementation of the AKS primality test algorithm in Rust._
+
+The AKS primality test is a deterministic primality-proving algorithm, it was first presented by **Manindra Agrawal**, **Neeraj Kayal**, and **Nitin Saxena** in 2002.
+
+This Rust implementation is just for educational purposes, it's main purpose is to understand the core concepts of the algorithm. It is not fully optimized and it is not intended to be used in production. Developed by Álvaro Buj (@buj8) for the Advanced Theory of Computation course at the UC3M (Universidad Carlos III de Madrid).
 
 **Work in progress.**
 
