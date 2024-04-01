@@ -1,6 +1,6 @@
 # AKS Algorithm (_aks-rs_)
 
-## What is this?
+## What's this?
 
 _Just a basic implementation of the AKS primality test algorithm in Rust._
 
