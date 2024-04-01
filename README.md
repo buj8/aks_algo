@@ -18,7 +18,7 @@ From the [original paper](https://www.cse.iitk.ac.in/users/manindra/algebra/prim
 
 ## Status
 
-**Work in progress...**
+_**Work in progress...**_
 
 Steps implemented:
 
