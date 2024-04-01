@@ -1,4 +1,4 @@
-# AKS Algorithm (aks-algo)
+# AKS Algorithm (_aks-rs_)
 
 ## What is this?
 
