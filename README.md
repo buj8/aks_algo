@@ -10,7 +10,7 @@ This Rust implementation is just for educational purposes, it's main purpose is 
 
 Steps implemented:
 
-- [x] 1: If $n = a^b$ with $a \in \mathbb{N}$ \land $b \gt 1$, output **COMPOSITE**.
+- [x] 1: If $n = a^b$ with $a \in \mathbb{N} \land b \gt 1$, output **COMPOSITE**.
 - [ ] 2: Find the smallest $r \in \mathbb{N}$ such that $o_r(n) \gt \log^2 n$ with $r \lt n$.
 - [ ] 3: If $1 \lt \gcd(a, n) \lt n$ for some $a \leq r$, output **COMPOSITE**.
 - [ ] 4: If $n \leq r$, output **PRIME**.q
