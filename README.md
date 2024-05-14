@@ -1,6 +1,6 @@
-# AKS Algorithm (aks-algo)
+# AKS Algorithm (_aks-rs_)
 
-## What is this?
+## What's this?
 
 _Just a basic implementation of the AKS primality test algorithm in Rust._
 
@@ -18,15 +18,16 @@ From the [original paper](https://www.cse.iitk.ac.in/users/manindra/algebra/prim
 
 ## Status
 
-**Work in progress...**
+_**Work in progress...**_
 
 Steps implemented:
 
-- [x] 1: If $n = a^b$ with $a \in \mathbb{N} \land b \gt 1$, output **COMPOSITE**.
-- [ ] 2: Find the smallest $r \in \mathbb{N}$ such that $o_r(n) \gt \log^2 n$ with $r \lt n$.
+- [x] 1: If ($n = a^b$ for $a \in \mathbb{N} \land b \gt 1$), output **COMPOSITE**.
+- [ ] 2: Find the smallest $r \in \mathbb{N}$ such that $o_r(n) \gt \log^2 n$.
 - [ ] 3: If $1 \lt \gcd(a, n) \lt n$ for some $a \leq r$, output **COMPOSITE**.
-- [ ] 4: If $n \leq r$, output **PRIME**.q
-- [ ] 5: For $a = 1$ to $\lfloor \sqrt{\phi(r)} \log_2 n \rfloor$, if $(X + a)^n \neq X^n + a \mod (X^r - 1, n)$, output **COMPOSITE**.
+- [ ] 4: If $n \leq r$, output **PRIME**.
+- [ ] 5: For $a = 1$ to $\lfloor \sqrt{\phi(r)} \log_2 n \rfloor$, do if $(X + a)^n \neq X^n + a \mod (X^r - 1, n)$, output **COMPOSITE**.
+- [x] 6. Output **PRIME**.
 
 ## Bibliography
 
