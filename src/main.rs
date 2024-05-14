@@ -1,4 +1,5 @@
-use std::io::Write;
+use rug::Integer;
+use std::io::{self, Write};
 
 fn main() {
     print!(
@@ -15,23 +16,26 @@ fn main() {
                     @buj8 on GitHub
         "#
     );
-    print!("\n\tBased on the AKS primality test algorithm developed in 2002 by \n\t- Manindra Agrawal\n\t- Neeraj Kayal\n\t- Nitin Saxena\n\n");
+    print!("\n\tBased on the AKS primality test algorithm developed in 2002 by \n");
+    print!("\t- Manindra Agrawal\n");
+    print!("\t- Neeraj Kayal\n");
+    print!("\t- Nitin Saxena\n\n");
     loop {
         print!("Enter a number to check if it is prime (0 to exit)\n> ");
-        std::io::stdout().flush().unwrap();
+        io::stdout().flush().unwrap();
         let mut input = String::new();
-        std::io::stdin().read_line(&mut input).unwrap();
-        let input: u64 = match input.trim().parse() {
+        io::stdin().read_line(&mut input).unwrap();
+        let input: Integer = match input.trim().parse() {
             Ok(num) => num,
             Err(_) => {
                 print!("Please enter a valid number.\n\n");
                 continue;
             }
         };
-        if input == 0 {
+        if input.is_zero() {
             break;
         }
-        let is_prime = aks_algo::aks(input);
+        let is_prime = aks_rs::aks(&input);
         if is_prime {
             print!("{} is a prime number.\n\n", input);
         } else {
